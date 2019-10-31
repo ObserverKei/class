@@ -1,0 +1,11 @@
+all:send accept
+
+accept:accept.c
+	gcc $< -o $@
+send:send.c
+	gcc $< -o $@
+
+.PHONY:
+clean:
+	rm send recv
+
